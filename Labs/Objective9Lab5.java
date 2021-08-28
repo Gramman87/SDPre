@@ -4,10 +4,9 @@ public class Objective9Lab5 {
 
   public static void main(String[] args) {
     Scanner kb = new Scanner (System.in);
-		double num1, num2;
+    double num1, num2;
 		boolean keepGoing = true;
 		int choice;
-		double answer = 0.0;
 
     System.out.println("Please give me a number: ");
     num1 = kb.nextDouble();
@@ -22,16 +21,13 @@ public class Objective9Lab5 {
 
 			switch (choice) {
         case 1:
-          answer = findSum(num1, num2);
-          System.out.println(num1 + " + " + num2 + " = " + answer);
+          System.out.println(num1 + " + " + num2 + " = " + findSum(num1, num2));
           break;
         case 2:
-          answer = findAverage(num1, num2);
-          System.out.println("The average of " + num1 + " and " + num2 + " is: " + answer);
+          System.out.println("The average of " + num1 + " and " + num2 + " is: " + findAverage(num1, num2));
           break;
         case 3:
-          answer = calcTax(num1, num2);
-          System.out.println("The amount in tax to be collected from a purchase of " + num1 + " and " + num2 + " is: " + answer);
+          System.out.println("The amount in tax to be collected from a purchase of " + num1 + " and " + num2 + " is: " + calcTax(num1, num2));
           break;
         case 4:
           keepGoing = false;
