@@ -29,9 +29,18 @@ public class Objective9Lab5 {
         case 3:
           System.out.println("The amount in tax to be collected from a purchase of " + num1 + " and " + num2 + " is: " + calcTax(num1, num2));
           break;
+
         case 4:
+          System.out.println("Please give me your first new number: ");
+          num1 = kb.nextInt();
+          System.out.println("Please give me your second new number: ");
+          num2 = kb.nextInt();
+          break;
+
+        case 5:
           keepGoing = false;
           System.out.println("You've chosen to quit.");
+          System.out.println("Good Bye!");
           break;
         default:
           System.out.println("Invalid entry. Please try again");
@@ -48,7 +57,8 @@ public class Objective9Lab5 {
 		System.out.println("|   1. Add Numbers     |");
 		System.out.println("|   2. Find Average    |");
 		System.out.println("|   3. Calculate Tax   |");
-		System.out.println("|   4. Exit            |");
+		System.out.println("|   4. New Inputs      |");
+    System.out.println("|   5. Exit            |");
 		System.out.println("|                      |");
 		System.out.println("========================");
 		System.out.println();
